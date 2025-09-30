@@ -7,8 +7,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Clock, FileText } from "lucide-react";
 import Link from "next/link";
+import { useGSAP, pageTransitions } from "@/hooks/useGSAP";
 
 export default function Assignment1Page() {
+  // Initialize page entrance animation
+  useGSAP(() => {
+    pageTransitions.fadeIn();
+  }, []);
+
+  // Initialize page entrance animation
+  useGSAP(() => {
+    pageTransitions.fadeIn();
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { X, Clock, BarChart3, CheckCircle, Code, Target } from "lucide-react";
+import { useGSAP } from "@/hooks/useGSAP";
 
 interface Course {
   title: string;
@@ -26,19 +27,50 @@ const CourseDetailsModal: React.FC<CourseDetailsModalProps> = ({ course, isOpen,
   const getLevelColor = (level: string) => {
     switch (level) {
       case 'Beginner':
-        return 'text-green-400 bg-green-400/10 border-green-400/30';
+        return 'bg-green-500/10 text-green-400 border-green-500/20';
       case 'Intermediate':
-        return 'text-blue-400 bg-blue-400/10 border-blue-400/30';
+        return 'bg-blue-500/10 text-blue-400 border-blue-500/20';
       case 'Advanced':
-        return 'text-purple-400 bg-purple-400/10 border-purple-400/30';
+        return 'bg-purple-500/10 text-purple-400 border-purple-500/20';
       default:
-        return 'text-gray-400 bg-gray-400/10 border-gray-400/30';
+        return 'bg-gray-500/10 text-gray-400 border-gray-500/20';
     }
   };
 
+  // GSAP animation for modal entrance
+  useGSAP((gsap) => {
+    // Animate modal entrance
+    gsap.from(".modal-content", {
+      scale: 0.8,
+      opacity: 0,
+      duration: 0.4,
+      ease: "power2.out"
+    });
+
+    // Animate content sections
+    gsap.from("[data-animate='modal-section']", {
+      y: 20,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.1,
+      delay: 0.2,
+      ease: "power2.out"
+    });
+
+    // Animate technology tags
+    gsap.from("[data-animate='tech-tag']", {
+      scale: 0,
+      opacity: 0,
+      duration: 0.3,
+      stagger: 0.05,
+      delay: 0.4,
+      ease: "back.out(1.7)"
+    });
+  }, []);
+
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-gray-900/95 border border-gray-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+      <div className="modal-content bg-gray-900/95 border border-gray-800 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="relative">
           <img 
@@ -69,7 +101,7 @@ const CourseDetailsModal: React.FC<CourseDetailsModalProps> = ({ course, isOpen,
         {/* Content */}
         <div className="p-6 space-y-6">
           {/* Description */}
-          <div>
+          <div data-animate="modal-section">
             <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
               <BarChart3 className="w-5 h-5" />
               Course Overview
@@ -78,7 +110,7 @@ const CourseDetailsModal: React.FC<CourseDetailsModalProps> = ({ course, isOpen,
           </div>
 
           {/* Prerequisites */}
-          <div>
+          <div data-animate="modal-section">
             <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
               <CheckCircle className="w-5 h-5" />
               Prerequisites
@@ -87,7 +119,7 @@ const CourseDetailsModal: React.FC<CourseDetailsModalProps> = ({ course, isOpen,
           </div>
 
           {/* Technologies */}
-          <div>
+          <div data-animate="modal-section">
             <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
               <Code className="w-5 h-5" />
               Technologies You'll Learn
@@ -96,6 +128,7 @@ const CourseDetailsModal: React.FC<CourseDetailsModalProps> = ({ course, isOpen,
               {course.technologies.map((tech, index) => (
                 <span
                   key={index}
+                  data-animate="tech-tag"
                   className="px-3 py-1 bg-gray-800 text-gray-300 rounded-lg text-sm border border-gray-700"
                 >
                   {tech}
@@ -105,7 +138,7 @@ const CourseDetailsModal: React.FC<CourseDetailsModalProps> = ({ course, isOpen,
           </div>
 
           {/* Learning Outcomes */}
-          <div>
+          <div data-animate="modal-section">
             <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
               <Target className="w-5 h-5" />
               What You'll Achieve

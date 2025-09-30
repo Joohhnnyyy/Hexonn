@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/sections/header";
 import HeroSection from "@/components/sections/hero";
 import HeroImage from "@/components/sections/hero-image";
@@ -6,19 +8,20 @@ import PrinciplesSection from "@/components/sections/principles";
 import TeamSection from "@/components/sections/team";
 import AwardsSection from "@/components/sections/awards";
 import Footer from "@/components/sections/footer";
+import PageTransitionWrapper from "@/components/PageTransitionWrapper";
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
-      <main>
+      <PageTransitionWrapper>
         <HeroSection />
         <HeroImage />
         <IntroductionSection />
         <PrinciplesSection />
         <TeamSection />
         <AwardsSection />
-      </main>
+      </PageTransitionWrapper>
       <Footer />
     </div>
   );

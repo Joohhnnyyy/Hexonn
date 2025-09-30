@@ -1,14 +1,20 @@
 "use client";
 
-import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
+import Header from "@/components/sections/header";
+import Link from "next/link";
+import { ArrowLeft, Clock, FileText } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Clock, FileText } from "lucide-react";
-import Link from "next/link";
+import { useGSAP, pageTransitions } from "@/hooks/useGSAP";
 
 export default function Assignment4Page() {
+  // Initialize page entrance animation
+  useGSAP((gsap) => {
+    pageTransitions.fadeIn();
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />

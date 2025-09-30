@@ -1,5 +1,6 @@
 import React from 'react';
 import { gsap } from 'gsap';
+import { useGSAPElement } from '@/hooks/useGSAP';
 
 import './FlowingMenu.css';
 
@@ -20,8 +21,24 @@ interface MenuItemProps {
 }
 
 function FlowingMenu({ items = [] }: FlowingMenuProps) {
+  // Add entrance animation for the entire menu
+  const menuRef = useGSAPElement<HTMLDivElement>((element, gsap) => {
+    gsap.from(element.querySelectorAll('.menu__item'), {
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.15,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: element,
+        start: "top 85%",
+        toggleActions: "play none none reverse"
+      }
+    });
+  }, []);
+
   return (
-    <div className="menu-wrap">
+    <div className="menu-wrap" ref={menuRef}>
       <nav className="menu">
         {items.map((item, idx) => (
           <MenuItem key={idx} {...item} />

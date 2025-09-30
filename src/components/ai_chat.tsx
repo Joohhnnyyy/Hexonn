@@ -60,6 +60,8 @@ export function AnimatedAIChat() {
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
+  // Removed conflicting GSAP animations - using Framer Motion exclusively
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages])
@@ -84,6 +86,7 @@ export function AnimatedAIChat() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
+          message: input.trim(),
           messages: [...messages, userMessage].map((msg) => ({
             role: msg.role,
             content: msg.content,
@@ -339,7 +342,12 @@ export function AnimatedAIChat() {
           )}
 
           {/* Input Area */}
-          <div className="p-6 border-t border-gray-800/50">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
+            className="p-6 border-t border-gray-800/50"
+          >
             <div className="max-w-4xl mx-auto">
               {/* Attachments Preview */}
               <AnimatePresence>
@@ -413,7 +421,7 @@ export function AnimatedAIChat() {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

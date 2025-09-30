@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useGSAP } from "@/hooks/useGSAP";
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -29,6 +30,8 @@ const navItems = [
   { category: "Academics", name: "Courses", href: "/courses" },
   { category: "Evaluation", name: "Assignments", href: "/eventi" },
   { category: "AI", name: "Playground", href: "/ricerca" },
+  { category: "Registration", name: "Sign In", href: "/login" },
+  { category: "Insights", name: "Dashboard", href: "/dashboard" },
 ];
 
 const NavLink = ({
@@ -86,7 +89,41 @@ export default function Header() {
   const [hexagonRotation, setHexagonRotation] = useState(0);
   const pathname = usePathname();
 
+  // GSAP animation for header entrance
+  useGSAP((gsap) => {
+    // Animate header entrance
+    gsap.from("header", {
+      y: -100,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    });
+
+    // Animate navigation items
+    gsap.from("[data-animate='nav-item']", {
+      y: -20,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.1,
+      delay: 0.3,
+      ease: "power2.out"
+    });
+  }, []);
+
   useEffect(() => {
+    let animationId: number;
+    let targetRotation = 0;
+    let currentRotation = 0;
+    
+    const smoothRotate = () => {
+      // Smooth interpolation towards target rotation
+      const diff = targetRotation - currentRotation;
+      currentRotation += diff * 0.08; // Smooth easing factor
+      
+      setHexagonRotation(currentRotation);
+      animationId = requestAnimationFrame(smoothRotate);
+    };
+
     const handleScroll = (event: WheelEvent) => {
       // Check if we're at the top or bottom of the page
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -94,29 +131,27 @@ export default function Header() {
       const clientHeight = document.documentElement.clientHeight;
       
       const isAtTop = scrollTop === 0;
-      const isAtBottom = scrollTop + clientHeight >= scrollHeight - 1; // -1 for floating point precision
+      const isAtBottom = scrollTop + clientHeight >= scrollHeight - 1;
       
       // Don't rotate if at top or bottom
       if (isAtTop || isAtBottom) {
         return;
       }
       
-      // Prevent default scroll behavior on the hexagon area
-      const hexagonElement = document.getElementById('hexagon-container');
-      if (hexagonElement && hexagonElement.contains(event.target as Node)) {
-        event.preventDefault();
-      }
-      
-      // Update rotation based on scroll delta (very slow rotation)
-      setHexagonRotation(prev => prev + (event.deltaY * 0.1));
+      // Update target rotation based on scroll delta
+      targetRotation += event.deltaY * 0.15;
     };
 
+    // Start smooth animation loop
+    animationId = requestAnimationFrame(smoothRotate);
+    
     // Add scroll event listener
-    window.addEventListener('wheel', handleScroll, { passive: false });
+    window.addEventListener('wheel', handleScroll, { passive: true });
 
     // Cleanup
     return () => {
       window.removeEventListener('wheel', handleScroll);
+      cancelAnimationFrame(animationId);
     };
   }, []);
 
@@ -131,7 +166,7 @@ export default function Header() {
             <div className="flex h-[85px] w-[85px] items-center justify-center bg-accent-purple relative" id="hexagon-container">
               <div className="relative w-16 h-16">
                 <svg
-                  className="absolute inset-0 w-full h-full transition-transform duration-700 ease-in-out"
+                  className="absolute inset-0 w-full h-full"
                   viewBox="0 0 100 100"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -199,7 +234,7 @@ export default function Header() {
         <nav className="hidden lg:flex flex-1 justify-center">
           <ul className="flex items-center gap-x-10">
             {navItems.map((item) => (
-              <li key={item.name}>
+              <li key={item.name} data-animate="nav-item">
                 <NavLink item={item} activePath={pathname} />
               </li>
             ))}

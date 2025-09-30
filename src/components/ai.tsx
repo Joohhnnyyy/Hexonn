@@ -8,6 +8,8 @@ const FloatingAiAssistant = () => {
   const [isChatOpen, setIsChatOpen] = useState(false)
   const [message, setMessage] = useState("")
   const [charCount, setCharCount] = useState(0)
+  const [messages, setMessages] = useState<Array<{id: string, role: 'user' | 'assistant', content: string}>>([])
+  const [isLoading, setIsLoading] = useState(false)
   const maxChars = 2000
   const chatRef = useRef<HTMLDivElement>(null)
 
@@ -17,11 +19,79 @@ const FloatingAiAssistant = () => {
     setCharCount(value.length)
   }
 
-  const handleSend = () => {
-    if (message.trim()) {
-      console.log("Sending message:", message)
+  const handleSend = async () => {
+    if (message.trim() && !isLoading) {
+      const userMessage = message.trim()
+      const messageId = Date.now().toString()
+      
+      // Add user message to chat
+      setMessages(prev => [...prev, { id: messageId, role: 'user', content: userMessage }])
       setMessage("")
       setCharCount(0)
+      setIsLoading(true)
+
+      try {
+        const response = await fetch('/api/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ message: userMessage }),
+        })
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        }
+
+        // Handle streaming response
+        const reader = response.body?.getReader()
+        const decoder = new TextDecoder()
+        let fullContent = ''
+
+        if (reader) {
+          while (true) {
+            const { done, value } = await reader.read()
+            if (done) break
+
+            const chunk = decoder.decode(value)
+            const lines = chunk.split('\n')
+            
+            for (const line of lines) {
+              if (line.startsWith('data: ')) {
+                const data = line.slice(6)
+                if (data === '[DONE]') {
+                  break
+                }
+                try {
+                  const parsed = JSON.parse(data)
+                  if (parsed.content) {
+                    fullContent += parsed.content
+                  }
+                } catch (e) {
+                  // Skip invalid JSON
+                }
+              }
+            }
+          }
+        }
+        
+        // Add AI response to chat
+        setMessages(prev => [...prev, { 
+          id: (Date.now() + 1).toString(), 
+          role: 'assistant', 
+          content: fullContent.trim() 
+        }])
+      } catch (error) {
+        console.error('Error sending message:', error)
+        // Add error message to chat
+        setMessages(prev => [...prev, { 
+          id: (Date.now() + 1).toString(), 
+          role: 'assistant', 
+          content: 'Sorry, I encountered an error. Please try again.' 
+        }])
+      } finally {
+        setIsLoading(false)
+      }
     }
   }
 
@@ -86,7 +156,7 @@ const FloatingAiAssistant = () => {
             animation: "popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards",
           }}
         >
-          <div className="relative flex flex-col rounded-3xl bg-gradient-to-br from-zinc-800/80 to-zinc-900/90 border border-zinc-500/50 shadow-2xl backdrop-blur-3xl overflow-hidden">
+          <div className="relative flex flex-col rounded-3xl bg-gradient-to-br from-zinc-800/80 to-zinc-900/90 border border-zinc-500/50 shadow-2xl backdrop-blur-3xl overflow-hidden max-h-[600px]">
             {/* Header */}
             <div className="flex items-center justify-between px-6 pt-4 pb-2">
               <div className="flex items-center gap-1.5">
@@ -105,6 +175,38 @@ const FloatingAiAssistant = () => {
                   <X className="w-4 h-4 text-zinc-400" />
                 </button>
               </div>
+            </div>
+
+            {/* Messages Area */}
+            <div className="flex-1 overflow-y-auto px-4 py-2 max-h-[300px] space-y-3">
+              {messages.length === 0 ? (
+                <div className="text-center text-zinc-400 text-sm py-8">
+                  Start a conversation with HEX, your AI assistant!
+                </div>
+              ) : (
+                messages.map((msg) => (
+                  <div key={msg.id} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
+                    <div className={`max-w-[80%] p-3 rounded-lg text-sm ${
+                      msg.role === 'user' 
+                        ? 'bg-blue-600 text-white' 
+                        : 'bg-zinc-700/50 text-zinc-200'
+                    }`}>
+                      <div className="whitespace-pre-wrap">{msg.content}</div>
+                    </div>
+                  </div>
+                ))
+              )}
+              {isLoading && (
+                <div className="flex justify-start">
+                  <div className="bg-zinc-700/50 text-zinc-200 p-3 rounded-lg text-sm">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-zinc-400 rounded-full animate-bounce"></div>
+                      <div className="w-2 h-2 bg-zinc-400 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                      <div className="w-2 h-2 bg-zinc-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Input Section */}

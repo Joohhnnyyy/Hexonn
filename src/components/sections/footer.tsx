@@ -1,5 +1,8 @@
+"use client";
+
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
+import { useGSAP } from '@/hooks/useGSAP';
 
 const socialLinks = [
   { name: 'LinkedIn', href: 'https://www.linkedin.com/company/hexon-elearning/' },
@@ -49,6 +52,37 @@ const AnimatedBlob = () => (
 );
 
 const Footer = () => {
+  // GSAP animations for footer elements
+  useGSAP((gsap, ScrollTrigger) => {
+    // Animate footer sections on scroll
+    gsap.from("[data-animate='footer-section']", {
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: "footer",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
+      }
+    });
+
+    // Animate social links
+    gsap.from("[data-animate='social-link']", {
+      scale: 0,
+      opacity: 0,
+      duration: 0.4,
+      stagger: 0.1,
+      ease: "back.out(1.7)",
+      scrollTrigger: {
+        trigger: "footer",
+        start: "top 70%",
+        toggleActions: "play none none reverse"
+      }
+    });
+  }, []);
     
   const linkClassName = "hover:opacity-80 transition-opacity text-sm text-primary-text";
     
@@ -57,7 +91,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 pt-32 pb-24 relative">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-12 gap-x-8">
           
-          <div className="md:col-span-4">
+          <div data-animate="footer-section" className="md:col-span-4">
             <p className="font-normal text-base mb-4 text-primary-text">HEXON E-Learning</p>
             <div className="text-secondary-text text-sm space-y-1">
               <p>Next-Generation Learning Platform</p>
@@ -67,7 +101,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="md:col-span-2">
+          <div data-animate="footer-section" className="md:col-span-2">
             <ul className="space-y-3">
               {navLinks1.map((link) => (
                 <li key={link.name}>
@@ -85,7 +119,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="md:col-span-3 lg:col-span-2">
+          <div data-animate="footer-section" className="md:col-span-3 lg:col-span-2">
             <ul className="space-y-3">
               {navLinks2.map((link) => (
                 <li key={link.name}>
@@ -106,7 +140,7 @@ const Footer = () => {
         <div className="mt-24">
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {socialLinks.map((link) => (
-              <a key={link.name} href={link.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:opacity-80 transition-opacity text-sm text-primary-text">
+              <a key={link.name} href={link.href} target="_blank" rel="noopener noreferrer" data-animate="social-link" className="flex items-center gap-1 hover:opacity-80 transition-opacity text-sm text-primary-text">
                 {link.name}
                 <ArrowUpRight className="w-3 h-3"/>
               </a>
