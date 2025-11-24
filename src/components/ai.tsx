@@ -31,7 +31,12 @@ const FloatingAiAssistant = () => {
       setIsLoading(true)
 
       try {
-        const response = await fetch('/api/chat', {
+        const backendUrl =
+          process.env.NEXT_PUBLIC_BACKEND_URL ||
+          (typeof window !== 'undefined' && window.location.hostname.endsWith('vercel.app')
+            ? 'https://hexon-backend.onrender.com'
+            : 'http://localhost:3001')
+        const response = await fetch(`${backendUrl}/api/chat`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

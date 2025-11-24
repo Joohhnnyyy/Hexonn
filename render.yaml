@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: hexon-backend
+    env: node
+    plan: free
+    repo: https://github.com/Joohhnnyyy/Hexon.git
+    branch: main
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_MODEL
+        value: gemini-1.5-flash
+      - key: ALLOWED_ORIGINS
+        value: https://hexon-platform.vercel.app

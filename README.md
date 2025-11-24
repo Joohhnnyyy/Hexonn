@@ -1,15 +1,37 @@
-# 🎓 Hexon - Modern Course Selling Platform
+# Hexon - Modern Course Selling & AI Learning Platform
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 
-> **Hexon** is a cutting-edge, modern course selling platform built with Next.js 14, designed to provide an exceptional learning experience for both instructors and students.
+> Hexon is a modern, AI‑powered learning platform built with Next.js 14. It offers curated courses across programming, business, marketing, and content creation, enhanced by a real‑time AI assistant that helps learners navigate content, answer questions, and personalize their journey.
 
-## ✨ Features
+## Live URLs
 
-### 🎯 Core Features
+- **Website**: https://hexon-projects.vercel.app
+- **Backend API**: https://hexon-backend.onrender.com
+
+## What Hexon Is For
+
+- **Learners** seeking an engaging, guided way to master in‑demand skills
+- **Educators** offering structured courses with a streamlined publishing workflow
+- **Teams & institutions** aiming to provide modern, scalable learning experiences
+
+## What We Offer
+
+- **AI Assistant (HEX)**: Real‑time, streamed responses to questions with helpful guidance
+- **Curated Courses**: Programming, Business, Marketing, and Content Creation tracks
+- **Personalized Learning**: Adaptive prompts and assistant support on the `/ricerca` page
+- **Modern UI/UX**: Dark theme, responsive layouts, immersive animations
+- **Interactive Content**: Rich components, multimedia, and course details pages
+- **Dashboards**: Student and Educator areas to organize progress and course creation
+
+Explore the AI assistant at `/ricerca` on the website.
+
+## Features
+
+### Core Features
 - **Modern UI/UX**: Beautiful, responsive design with dark theme
 - **Course Management**: Create, edit, and manage courses with ease
 - **User Authentication**: Secure login and registration system
@@ -17,7 +39,7 @@
 - **Progress Tracking**: Track student progress and completion rates
 - **Interactive Learning**: Engaging course content with multimedia support
 
-### 🛠️ Technical Features
+### Technical Features
 - **Server-Side Rendering**: Fast page loads with Next.js 14
 - **TypeScript**: Type-safe development for better code quality
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
@@ -26,7 +48,7 @@
 - **Real-time Updates**: Dynamic content updates
 - **SEO Optimized**: Built-in SEO optimization for better discoverability
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+ 
@@ -68,7 +90,7 @@
 5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 hexon/
@@ -90,7 +112,7 @@ hexon/
 └── README.md                 # Project documentation
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework**: Next.js 14 with App Router
@@ -111,7 +133,7 @@ hexon/
 - **Code Formatting**: Prettier (recommended)
 - **Build Tool**: Turbopack (Next.js 14)
 
-## 📚 Available Scripts
+## Available Scripts
 
 ```bash
 # Development
@@ -126,7 +148,7 @@ npm run db:migrate   # Run database migrations
 npm run db:studio    # Open database studio
 ```
 
-## 🎨 Design System
+## Design System
 
 Hexon uses a carefully crafted design system with:
 
@@ -136,7 +158,7 @@ Hexon uses a carefully crafted design system with:
 - **Responsive Design**: Mobile-first approach
 - **Animations**: Smooth, purposeful animations
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -161,7 +183,7 @@ EMAIL_SERVER_USER="your_email_user"
 EMAIL_SERVER_PASSWORD="your_email_password"
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 
@@ -178,7 +200,7 @@ Hexon can be deployed on any platform that supports Next.js:
 - DigitalOcean App Platform
 - AWS Amplify
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please follow these steps:
 
@@ -196,18 +218,18 @@ We welcome contributions! Please follow these steps:
 - Add tests for new features
 - Update documentation as needed
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Next.js](https://nextjs.org/)
 - UI components from [Radix UI](https://www.radix-ui.com/)
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
 - Icons from [Heroicons](https://heroicons.com/) and [Lucide](https://lucide.dev/)
 
-## 📞 Support
+## Support
 
 - **Documentation**: [Coming Soon]
 - **Issues**: [GitHub Issues](https://github.com/Joohhnnyyy/Hexon/issues)
@@ -216,10 +238,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <p>Made with ❤️ by the Hexon Team</p>
+  <p>Maintained by the Hexon Team</p>
   <p>
-    <a href="https://github.com/Joohhnnyyy/Hexon">⭐ Star us on GitHub</a> •
-    <a href="https://github.com/Joohhnnyyy/Hexon/issues">🐛 Report Bug</a> •
-    <a href="https://github.com/Joohhnnyyy/Hexon/issues">💡 Request Feature</a>
+    <a href="https://github.com/Joohhnnyyy/Hexon">Star on GitHub</a> •
+    <a href="https://github.com/Joohhnnyyy/Hexon/issues">Report Bug</a> •
+    <a href="https://github.com/Joohhnnyyy/Hexon/issues">Request Feature</a>
   </p>
 </div>

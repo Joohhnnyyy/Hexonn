@@ -504,10 +504,10 @@ const CoursesGridSection = ({ filteredCourses }: { filteredCourses: typeof progr
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-8">
             <div className="flex items-center gap-3">
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full ring-1 ring-white/30"></div>
               <h3 className="text-2xl lg:text-3xl font-light text-white">Beginner Courses</h3>
             </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-green-500/50 to-transparent"></div>
+            <div className="flex-1 h-[2px] bg-gradient-to-r from-green-500/70 via-green-500/40 to-transparent"></div>
           </div>
           <p className="text-gray-400 text-sm mb-8 max-w-2xl">
             Perfect for those starting their programming journey. No prior experience required.
@@ -521,10 +521,10 @@ const CoursesGridSection = ({ filteredCourses }: { filteredCourses: typeof progr
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-8">
             <div className="flex items-center gap-3">
-              <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-blue-500 rounded-full ring-1 ring-white/30"></div>
               <h3 className="text-2xl lg:text-3xl font-light text-white">Intermediate Courses</h3>
             </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-blue-500/50 to-transparent"></div>
+            <div className="flex-1 h-[2px] bg-gradient-to-r from-blue-500/70 via-blue-500/40 to-transparent"></div>
           </div>
           <p className="text-gray-400 text-sm mb-8 max-w-2xl">
             Build upon your foundation with more complex concepts and real-world applications.
@@ -538,10 +538,10 @@ const CoursesGridSection = ({ filteredCourses }: { filteredCourses: typeof progr
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-8">
             <div className="flex items-center gap-3">
-              <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-purple-500 rounded-full ring-1 ring-white/30"></div>
               <h3 className="text-2xl lg:text-3xl font-light text-white">Advanced Courses</h3>
             </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-purple-500/50 to-transparent"></div>
+            <div className="flex-1 h-[2px] bg-gradient-to-r from-purple-500/70 via-purple-500/40 to-transparent"></div>
           </div>
           <p className="text-gray-400 text-sm mb-8 max-w-2xl">
             Master advanced techniques and cutting-edge technologies for expert-level development.

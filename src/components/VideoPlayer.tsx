@@ -15,6 +15,7 @@ interface VideoPlayerProps {
   videoUrl: string;
   title: string;
   description?: string;
+  thumbnailUrl?: string;
   onBack?: () => void;
   backUrl?: string;
   playlistVideos?: PlaylistVideo[];
@@ -26,6 +27,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
   videoUrl,
   title,
   description,
+  thumbnailUrl,
   onBack,
   backUrl,
   playlistVideos,
@@ -102,6 +104,13 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
       <main className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 lg:grid-cols-5 gap-8">
         {/* Video + Info */}
         <div className="lg:col-span-4 space-y-8">
+          {/* Optional Cover Banner */}
+          {thumbnailUrl && (
+            <div className="relative w-full h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden rounded-xl border border-gray-700">
+              <img src={thumbnailUrl} alt={title} className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+            </div>
+          )}
 {/* Video */}
 <div className="relative rounded-xl overflow-hidden shadow-lg border border-gray-700">
   {embedUrl ? (

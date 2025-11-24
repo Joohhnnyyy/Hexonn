@@ -23,12 +23,10 @@ const HeroImage = () => {
         <div className="container">
           <div className="grid grid-cols-12 items-center gap-x-6 text-primary-text text-base font-normal">
             <div className="col-span-6 md:col-span-3 lg:col-span-4">
-              <span>/ Chi siamo</span>
             </div>
             {/* This empty div maintains the spacing from the original 3-column layout where an H2 was present */}
             <div className="hidden md:block md:col-span-8 lg:col-span-6" />
             <div className="col-span-6 md:col-span-1 lg:col-span-2 text-right">
-              <span>L*3</span>
             </div>
           </div>
         </div>

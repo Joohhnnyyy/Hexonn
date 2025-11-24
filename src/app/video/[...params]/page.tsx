@@ -174,7 +174,13 @@ const VideoPage: React.FC = () => {
   const backUrl = `/courses/courses/${category}`;
   const courseTitle = getCourseTitle(course);
   const videoName = getVideoName(course);
-  const description = generateDescription(courseTitle, normalizedCategory);
+  // Prefer saved description from data; fallback to generated
+  const savedDescription = (course as any).Description || "";
+  const description = savedDescription && savedDescription.trim().length > 0
+    ? savedDescription
+    : generateDescription(courseTitle, normalizedCategory);
+
+  const thumbnailUrl = (course as any).Thumbnail || "";
 
   // Check if this course is part of a playlist (has multiple videos with same course title)
   const playlistVideos: PlaylistVideo[] = categoryData
@@ -209,6 +215,7 @@ const VideoPage: React.FC = () => {
       videoUrl={currentVideo.Link}
       title={getVideoName(currentVideo) || getCourseTitle(currentVideo)}
       description={description}
+      thumbnailUrl={thumbnailUrl || undefined}
       backUrl={backUrl}
       playlistVideos={playlistVideos.length > 1 ? playlistVideos : undefined}
       currentVideoIndex={playlistVideos.length > 1 ? playlistVideos.findIndex(video => video.videoId === currentVideo.Link) : undefined}

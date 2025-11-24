@@ -18,8 +18,9 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useGSAP } from "@/hooks/useGSAP";
+import * as React from "react";
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -43,7 +44,7 @@ const NavLink = ({
   item: typeof navItems[0];
   activePath: string;
   isMobile?: boolean;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
 }) => {
   const isActive = activePath === item.href;
 
@@ -66,6 +67,7 @@ const NavLink = ({
   return (
     <Link
       href={item.href}
+      onClick={onClick}
       className="group relative py-2 text-base text-white no-underline"
     >
       <div className="overflow-hidden">
@@ -88,6 +90,17 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hexagonRotation, setHexagonRotation] = useState(0);
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleNavClick = (item: typeof navItems[0]) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (item.href === "/dashboard") {
+      const signedIn = typeof window !== 'undefined' ? localStorage.getItem("hexon_signed_in") : null;
+      if (!signedIn) {
+        e.preventDefault();
+        router.push("/login");
+      }
+    }
+  };
 
   // GSAP animation for header entrance
   useGSAP((gsap) => {
@@ -139,7 +152,8 @@ export default function Header() {
       }
       
       // Update target rotation based on scroll delta
-      targetRotation += event.deltaY * 0.15;
+      const isSmallScreen = window.matchMedia('(max-width: 640px)').matches;
+      targetRotation += event.deltaY * (isSmallScreen ? 0.08 : 0.15);
     };
 
     // Start smooth animation loop
@@ -156,15 +170,15 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-[85px] bg-[rgba(0,0,0,0.28)] backdrop-blur-sm text-primary-text font-body">
-      <div className="w-full flex h-full items-center justify-between px-6">
+    <header className="fixed top-0 left-0 right-0 z-50 h-14 sm:h-[85px] bg-[rgba(0,0,0,0.28)] backdrop-blur-sm text-primary-text font-body">
+      <div className="w-full flex h-full items-center justify-between px-4 sm:px-6">
         <div className="flex flex-1 items-center justify-start">
           <Link
             href="/"
             className="flex h-full items-center text-white no-underline"
           >
-            <div className="flex h-[85px] w-[85px] items-center justify-center bg-accent-purple relative" id="hexagon-container">
-              <div className="relative w-16 h-16">
+            <div className="flex h-12 w-12 sm:h-[85px] sm:w-[85px] items-center justify-center bg-accent-purple relative" id="hexagon-container">
+              <div className="relative w-8 h-8 sm:w-16 sm:h-16">
                 <svg
                   className="absolute inset-0 w-full h-full"
                   viewBox="0 0 100 100"
@@ -225,7 +239,7 @@ export default function Header() {
                 </svg>
               </div>
             </div>
-            <span className="ml-4 hidden text-lg leading-tight sm:block">
+            <span className="ml-3 sm:ml-4 hidden text-base sm:text-lg leading-tight sm:block">
               HEXON
             </span>
           </Link>
@@ -235,7 +249,7 @@ export default function Header() {
           <ul className="flex items-center gap-x-10">
             {navItems.map((item) => (
               <li key={item.name} data-animate="nav-item">
-                <NavLink item={item} activePath={pathname} />
+                <NavLink item={item} activePath={pathname} onClick={handleNavClick(item)} />
               </li>
             ))}
           </ul>
@@ -247,10 +261,10 @@ export default function Header() {
               <DropdownMenuTrigger asChild>
                 <Button
                   variant="ghost"
-                  className="flex items-center gap-x-1 py-1 px-2 text-base text-white hover:bg-secondary-background hover:text-white"
+                  className="flex items-center gap-x-1 py-1 px-2 text-sm sm:text-base text-white hover:bg-secondary-background hover:text-white h-10 sm:h-12"
                 >
                   IT
-                  <ChevronDown className="h-4 w-4" />
+                  <ChevronDown className="h-3 w-3 sm:h-4 sm:w-4" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="min-w-[60px] rounded-none bg-secondary-background border-border-gray text-white">
@@ -265,26 +279,26 @@ export default function Header() {
 
             <a
               href="mailto:support@hexon.edu"
-              className="group relative flex items-center justify-center gap-x-2 overflow-hidden bg-secondary px-4 py-2 text-sm text-white no-underline transition-colors hover:bg-opacity-80"
+              className="group relative flex items-center justify-center gap-x-2 overflow-hidden bg-secondary px-3 sm:px-4 py-2 text-sm text-white no-underline transition-colors hover:bg-opacity-80 h-10 sm:h-12"
             >
               <span>Contatto</span>
-              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight className="h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
 
           <div className="lg:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-white hover:bg-secondary-background">
-                  <Menu className="h-6 w-6" />
+                <Button variant="ghost" size="icon" className="text-white hover:bg-secondary-background h-10 w-10 sm:h-12 sm:w-12">
+                  <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[85%] max-w-sm rounded-none bg-black border-l border-border-gray text-white p-6 flex flex-col">
+              <SheetContent side="right" className="w-[85%] max-w-sm rounded-none bg-black border-l border-border-gray text-white p-6 flex flex-col [&>button]:hidden">
                 <div className="flex justify-end items-center mb-8">
                   <SheetClose asChild>
-                    <Button variant="ghost" size="icon" className="text-white hover:bg-secondary-background">
-                      <X className="h-6 w-6" />
+                    <Button variant="ghost" size="icon" className="text-white hover:bg-secondary-background h-10 w-10 sm:h-12 sm:w-12">
+                      <X className="h-5 w-5 sm:h-6 sm:w-6" />
                       <span className="sr-only">Close menu</span>
                     </Button>
                   </SheetClose>
@@ -297,7 +311,7 @@ export default function Header() {
                           item={item}
                           activePath={pathname}
                           isMobile
-                          onClick={() => setIsMobileMenuOpen(false)}
+                          onClick={(e) => { handleNavClick(item)(e); setIsMobileMenuOpen(false); }}
                         />
                       </li>
                     ))}

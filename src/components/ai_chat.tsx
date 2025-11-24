@@ -9,40 +9,32 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 
 const SUGGESTED_PROMPTS = [
-  "Tell me a fun fact!",
-  "Recommend a movie to watch.",
-  "How do I make pancakes?",
-  "What's the latest in tech?",
+  "Which Programming course is best for a beginner?",
+  "What will I learn in the Generative AI course?",
+  "Prerequisites for Machine Learning with Python?",
+  "Does Full-Stack Web Development cover deployment?",
 ]
 
 const FEATURE_CARDS = [
   {
-    icon: <FileImage className="w-5 h-5" />,
-    title: "Import from Figma",
-    description: "Import designs and assets from Figma",
-    gradient: "from-blue-500 to-blue-700",
-    endpoint: "/figma",
+    icon: <Bot className="w-5 h-5" />,
+    title: "Which Programming course should I start with?",
+    description: "Beginner options like Python or C++",
   },
   {
-    icon: <Globe className="w-5 h-5" />,
-    title: "Multi-language Support",
-    description: "Communicate fluently in various languages",
-    gradient: "from-orange-500 to-red-600",
-    endpoint: "/translate",
+    icon: <Sparkles className="w-5 h-5" />,
+    title: "What will I learn in Generative AI?",
+    description: "Projects, tools, and learning outcomes",
   },
   {
     icon: <ImageIcon className="w-5 h-5" />,
-    title: "Image Generation",
-    description: "Creates custom images based on user prompts",
-    gradient: "from-purple-500 to-pink-600",
-    endpoint: "/image",
+    title: "Prerequisites for Machine Learning with Python?",
+    description: "Required skills before enrolling",
   },
   {
     icon: <Code className="w-5 h-5" />,
-    title: "Code snippets",
-    description: "Provides quick, functional code examples on demand",
-    gradient: "from-teal-500 to-cyan-600",
-    endpoint: "/code",
+    title: "Does Full-Stack Web Dev include deployment?",
+    description: "Scope and stack covered in the course",
   },
 ]
 
@@ -58,12 +50,16 @@ export function AnimatedAIChat() {
   const [messages, setMessages] = useState<Message[]>([])
   const [isLoading, setIsLoading] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const messagesContainerRef = useRef<HTMLDivElement>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   // Removed conflicting GSAP animations - using Framer Motion exclusively
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+    const el = messagesContainerRef.current
+    if (el) {
+      el.scrollTo({ top: el.scrollHeight, behavior: "smooth" })
+    }
   }, [messages])
 
   const handleSend = async () => {
@@ -80,7 +76,12 @@ export function AnimatedAIChat() {
     setIsLoading(true)
 
     try {
-      const response = await fetch("/api/chat", {
+      const backendUrl =
+        process.env.NEXT_PUBLIC_BACKEND_URL ||
+        (typeof window !== "undefined" && window.location.hostname.endsWith("vercel.app")
+          ? "https://hexon-backend.onrender.com"
+          : "http://localhost:3001")
+      const response = await fetch(`${backendUrl}/api/chat`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -95,7 +96,7 @@ export function AnimatedAIChat() {
       })
 
       if (!response.ok) {
-        throw new Error("Failed to get response")
+        throw new Error(`Failed to get response: ${response.status}`)
       }
 
       const reader = response.body?.getReader()
@@ -171,18 +172,13 @@ export function AnimatedAIChat() {
     setInput(prompt)
   }
 
-  const handleFeatureClick = (endpoint: string) => {
-    setInput(endpoint + " ")
+  const handleFeatureClick = (question: string) => {
+    setInput(question)
   }
 
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-500" />
-      </div>
+      
 
       <div className="relative z-10 flex flex-col h-screen max-w-6xl mx-auto">
         {/* Main Content */}
@@ -203,7 +199,7 @@ export function AnimatedAIChat() {
                   Uses multiple sources and tools to answer questions with citations
                 </p>
 
-                {/* Feature Cards - Made smaller and added click handlers */}
+                {/* Course Question Cards - glass effect */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
                   {FEATURE_CARDS.map((feature, index) => (
                     <motion.div
@@ -211,8 +207,8 @@ export function AnimatedAIChat() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
-                      onClick={() => handleFeatureClick(feature.endpoint)}
-                      className={`relative p-4 rounded-2xl bg-gradient-to-br ${feature.gradient} overflow-hidden group cursor-pointer hover:scale-105 transition-transform duration-300`}
+                      onClick={() => handleFeatureClick(feature.title)}
+                      className={"relative p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-lg overflow-hidden group cursor-pointer hover:scale-105 transition-transform duration-300 hover:bg-white/10"}
                     >
                       {/* Sparkle effects */}
                       <div className="absolute top-3 right-3 opacity-60">
@@ -225,7 +221,7 @@ export function AnimatedAIChat() {
                       <div className="relative z-10">
                         <div className="text-white mb-2">{feature.icon}</div>
                         <h3 className="text-white font-semibold mb-1 text-sm">{feature.title}</h3>
-                        <p className="text-white/80 text-xs">{feature.description}</p>
+                        <p className="text-white/70 text-xs">{feature.description}</p>
                       </div>
                     </motion.div>
                   ))}
@@ -250,7 +246,7 @@ export function AnimatedAIChat() {
             </div>
           ) : (
             /* Chat Messages */
-            <div className="flex-1 overflow-y-auto p-6 space-y-6">
+            <div className="flex-1 overflow-y-auto p-6 space-y-6" ref={messagesContainerRef}>
               {messages.map((message) => (
                 <motion.div
                   key={message.id}

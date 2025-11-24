@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "env": {
+    "NEXT_PUBLIC_BACKEND_URL": "https://hexon-backend.onrender.com"
+  }
+}

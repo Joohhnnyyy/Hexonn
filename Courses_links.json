@@ -1,538 +1,597 @@
 {
-    "Programming": [
-        {
-            "Course": "Java Development Full Stack",
-            "Vid Name": "Full Stack Development with Java Spring Boot, React, and MongoDB \u2013 Full Course",
-            "Link": "https://youtu.be/5PdEmeopJVQ?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Python for Beginners",
-            "Vid Name": "Python Full Course for Beginners [2025]",
-            "Link": "https://youtu.be/K5KVEU3aaeQ?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Data Structures & Algorithms in C++",
-            "Vid Name": "Complete C++ DSA Course (full playlist covering DSA with C++).",
-            "Link": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Machine Learning with Python",
-            "Vid Name": "Machine Learning",
-            "Link": "https://www.youtube.com/playlist?list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Artificial Intelligence Foundations",
-            "Vid Name": "Artificial Intelligence Full Course (2025 / comprehensive intro course video).",
-            "Link": "https://www.youtube.com/live/kzavQrLyKRw?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Deep Learning & Neural Networks",
-            "Vid Name": "TensorFlow 2.0 Complete Course (deep learning tutorial / full course).",
-            "Link": "https://youtu.be/tPYj3fFJGjk?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": " AWS",
-            "Vid Name": "AWS Tutorial For Beginners",
-            "Link": "https://youtu.be/k1RI5locZE4?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Generative AI",
-            "Vid Name": "Generative AI Full Course \u2013 Gemini Pro, OpenAI, Llama, Langchain, Pinecone, Vector Databases & More",
-            "Link": "https://youtu.be/mEsleV16qdo?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Ethical Hacking",
-            "Vid Name": "Full Ethical Hacking / Penetration Testing Course (beginner-friendly full tutorial).",
-            "Link": "https://youtu.be/3Kq1MIfTWCE?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Mobile App Development with Flutter",
-            "Vid Name": "Flutter Course for Beginners \u2014 (full 37-hour Flutter course / freeCodeCamp)",
-            "Link": "https://youtu.be/VPvVD8t02U8?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Game Development with Unity",
-            "Vid Name": "Learn Unity - Beginner's Game Development Tutorial",
-            "Link": "https://youtu.be/gB1F9G0JXOo?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "DevOps",
-            "Vid Name": "DEVOPS ZERO TO HERO COURSE",
-            "Link": "https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Blockchain Development",
-            "Vid Name": "Learn Blockchain & Solidity Development Full Course 2024",
-            "Link": "https://youtu.be/jcgfQEbptdo?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Database Management with SQL",
-            "Vid Name": "SQL Tutorial - Full Database Course for Beginners",
-            "Link": "https://youtu.be/HXV3zeQKqGY?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Arduino ",
-            "Vid Name": "New Arduino Tutorials",
-            "Link": "https://www.youtube.com/playlist?list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Full-Stack Web Development",
-            "Vid Name": "Full Stack Web Development Full Course (2025) | COMPLETE Web Development Course | Intellipaat",
-            "Link": "https://www.youtube.com/live/yHWsByTVOXM?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "React.js Essentials",
-            "Vid Name": "React JS v19 Full Course (2025)",
-            "Link": "https://www.youtube.com/playlist?list=PL5dkTTGqCuTM4ZESWF3aTUmG0GUmwSE98",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Node.js Backend Development",
-            "Vid Name": "Node.js Tutorial (2025) - Complete Backend Course",
-            "Link": "https://www.youtube.com/playlist?list=PLt-1cRobtRcaNIWI1VXL2NG2qR4pBH55H",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "TypeScript",
-            "Vid Name": "Learn TypeScript \u2013 Full Tutorial",
-            "Link": "https://youtu.be/30LWjhZzg50?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Python for Data Science",
-            "Vid Name": "Python For Data Science Full Course 2025 | Data Science With Python For Beginners",
-            "Link": "https://www.youtube.com/live/eIA28KNWGiI?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Docker & Containerization for Developers",
-            "Vid Name": "Docker Tutorial for Beginners [FULL COURSE in 3 Hours]",
-            "Link": "https://youtu.be/3c-iBn73dDE?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Spring Boot Microservices Architecture",
-            "Vid Name": "Spring Boot Microservices Full Course",
-            "Link": "https://www.youtube.com/playlist?list=PLSVW22jAG8pBnhAdq9S8BpLnZ0_jVBj0c",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "JavaScript for Beginners",
-            "Vid Name": "JavaScript Tutorial Full Course - Beginner to Pro",
-            "Link": "https://youtu.be/EerdGm-ehJQ?feature=shared",
-            "Unnamed: 3": "vid"
-        }
-    ],
-    "Content Creation": [
-        {
-            "Course": "Introduction to Blogging & Writing",
-            "Vid title": "How to Start a Blog and Make Money With Blogging (2025) | Blogging for Beginners ⚡️",
-            "Link": "https://www.youtube.com/watch?v=uNwI-KAVT0o",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Social Media Content Strategy",
-            "Vid title": "How to Create a Social Media Content Strategy | Lesson 9 (SMM E-Course Challenge)",
-            "Link": "https://youtu.be/CsFIUIeLi5k?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Video Production for Beginners",
-            "Vid title": "Videography for Beginners | Full Course, Start Here!",
-            "Link": "https://youtu.be/PxY9SswA5j8?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Advanced Video Editing with Premiere Pro",
-            "Vid title": "Advanced Premiere Pro for Everyone | FREE COURSE",
-            "Link": "https://youtu.be/FMTlJ4GLvsU?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Podcasting Essentials",
-            "Vid title": "How to Start a Podcast: FULL Free Podcasting Course",
-            "Link": "https://www.youtube.com/playlist?list=PL16yO6yVPZcypQ_DqNHbEcU9v9rWuD3RG",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Photography Basics for Content Creators",
-            "Vid title": "Learn Photography for Beginners | Full photography course",
-            "Link": "https://youtu.be/yhAmMUi2NmM?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Graphic Design with Canva",
-            "Vid title": "CANVA Full Free Course (New Updated)",
-            "Link": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGcvBiUmkBQ5isfnBufjnAu3",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Adobe Photoshop Mastery",
-            "Vid title": "Adobe Photoshop CC Beginner to Advanced Tutorial: 8.5 Hour Training Course",
-            "Link": "https://youtu.be/thy-pH94kO8?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Adobe Illustrator for Beginners",
-            "Vid title": "Adobe Illustrator for Beginners | FREE COURSE",
-            "Link": "https://youtu.be/Ib8UBwu3yGA?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Storytelling for Digital Media",
-            "Vid title": "Storytelling course",
-            "Link": "https://www.youtube.com/playlist?list=PLTDvPohSybx64TpVFD6V4gz16Z36SbEJd",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Branding & Visual Identity",
-            "Vid title": "How To ACTUALLY Design a Brand Identity (Full Guide 2025)",
-            "Link": "https://youtu.be/y_2P5o_msuo?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "SEO for Content Creators",
-            "Vid title": "Complete SEO Course for Beginners: Learn to Rank #1 in Google",
-            "Link": "https://youtu.be/xsVTqzratPs?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "TikTok Content Creation",
-            "Vid title": "Beginners Guide To Making Money on TikTok in 2025 (FREE 4hr Course)",
-            "Link": "https://youtu.be/Wg0sxkrkFTQ?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Instagram Marketing & Growth",
-            "Vid title": "Instagram Growth Course 2025 Full Series in Hindi | Instagram Marketing Full Course #instagramcourse",
-            "Link": "https://www.youtube.com/watch?v=jilPHofu1Q4&list=PLXwTOG3-tRwjsL-3QVGOyALgUZItF-rC8",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "YouTube Channel Management",
-            "Vid title": "How To Start A YouTube Channel In 2025 | FULL COURSE",
-            "Link": "https://www.youtube.com/watch?v=o5Ts_P3MNew",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Adobe After Effects",
-            "Vid title": "Learn Adobe After Effects",
-            "Link": "https://www.youtube.com/playlist?list=PLYfCBK8IplO77FDDLnS06qEMoVLD7Qyib",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course": "Cinematography & Film Production",
-            "Vid title": "How to Master the Art of Filmmaking",
-            "Link": "https://www.youtube.com/watch?v=XlYWZRf_IKM",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Audio Editing with Audacity / Logic Pro",
-            "Vid title": "How to use Audacity to Record & Edit Audio | Beginners Tutorial",
-            "Link": "https://youtu.be/yzJ2VyYkmaA?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course": "Graphic Design Fundamentals",
-            "Vid title": "Graphic Design Basics | FREE COURSE",
-            "Link": "https://www.youtube.com/watch?v=GQS7wPujL2k",
-            "Unnamed: 3": "vid"
-        }
-    ],
-    "Business": [
-        {
-            "Course ": "Fundamentals of Entrepreneurship",
-            "Name": "The Foundations of Entrepreneurship - Full Course",
-            "Link": "https://youtu.be/UEngvxZ11sw?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Business planning",
-            "Name": "MIT 15.S21 Nuts and Bolts of Business Plans, IAP 2014",
-            "Link": "https://www.youtube.com/playlist?list=PLUl4u3cNGP61x5b_88idmqeRdPULQjGnv",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Financial Accounting Basics",
-            "Name": "Financial Accounting Course (complete playlist)",
-            "Link": "https://www.youtube.com/playlist?list=PLxP0KZzCGFYMghlw8ObWScuUwepqjXjbB",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Corporate Finance",
-            "Name": "Corporate Finance",
-            "Link": "https://www.youtube.com/playlist?list=PLStJMmIc-aqW1aMIKFmJMaMv3GQKX3P4Y",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Leadership & Management Skills",
-            "Name": "Leadership and management",
-            "Link": "https://www.youtube.com/playlist?list=PLrjP20LtSCNqVK8IwLd0rAiUVs8fwS0YQ",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": " Negotiation",
-            "Name": "Negotiation",
-            "Link": "https://www.youtube.com/playlist?list=PL6vWkk9L7LeHKze5em0hAzvagJ1oIQv_P",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "Business Communication ",
-            "Name": "Think Fast, Talk Smart: Communication Techniques",
-            "Link": "https://youtu.be/HAnw168huqA?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Funding",
-            "Name": "Funding Your Dream Startup in India (Debt, Equity, & Everything In-Between!)",
-            "Link": "https://youtu.be/uqdUFMzCAwU?feature=shared",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Project Management Fundamentals",
-            "Name": "Project Management Fundamentals",
-            "Link": "https://www.youtube.com/playlist?list=PLsz8d8r2a996dLF6xCFwYdLxxlUK4IXPt",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": " Business Analytics with Excel",
-            "Name": "Business Analytics And Excel Full Course 2023 | Data Analytics With Excel | Excel | Simplilearn",
-            "Link": "https://www.youtube.com/watch?v=K1yz9izM4lQ",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Operations Management ",
-            "Name": "Operations Management full course",
-            "Link": "https://www.youtube.com/playlist?list=PL5_qO7P2XjBd86Pw0SQVTaA88nHTj1I3e",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "Human resouce ",
-            "Name": "Human Resources Training Course Lecture | HR Basics, Strategies & Workplace Success",
-            "Link": "https://www.youtube.com/watch?v=__Auz5OOGtU",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Risk Management & Decision Making",
-            "Name": "Risk Based Decision Making Training",
-            "Link": "https://www.youtube.com/watch?v=SG1DG3TC0jI",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "E-Commerce Business Strategies",
-            "Name": "How to Start an Ecommerce Business in 2025 (FREE COURSE)",
-            "Link": "https://www.youtube.com/watch?v=S8p31Sg69RY",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "International Business`",
-            "Name": "Principles of International Business",
-            "Link": "https://www.youtube.com/playlist?list=PLHPrTtF9UV1IxnJZrrDMfIwWRw4BTfVuj",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "Advanced Leadership & People Management",
-            "Name": "Leadership Skills, Development & People Management",
-            "Link": "https://www.youtube.com/playlist?list=PLNMicXF-qb-WOpDdJU2KDYgyjRzsv8nv5",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "Strategic Decision-Making Techniques",
-            "Name": "Before You Decide: 3 Steps To Better Decision Making | Matthew Confer ",
-            "Link": "https://www.youtube.com/watch?v=d7Jnmi2BkS8",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Corporate Strategy & Competitive Analysis",
-            "Name": "Competitive Strategy Overview | Strategy & Technology: A Practical Primer",
-            "Link": "https://www.youtube.com/watch?v=1okDlIbxDgc",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Advanced Financial Modeling",
-            "Name": "Basic to Advanced Financial Modeling and Valuation Analysis Course",
-            "Link": "https://www.youtube.com/playlist?list=PL29wUpOZK1p_TTcTh9Bb8pcmFXYr-PMDT",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "Mergers & Acquisitions Basics",
-            "Name": "Mergers & Acquisitions",
-            "Link": "https://www.youtube.com/playlist?list=PLljNvPOyFqZSnsOvsHRljbRHFV0dLA3Wu",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "Business Law Essentials",
-            "Name": "Business Law",
-            "Link": "https://www.youtube.com/playlist?list=PLoJHkGmgd2_nEfRW1Cm7ojI5abflSzRVE",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "Advanced Project Management",
-            "Name": "Advanced Project Management",
-            "Link": "https://www.youtube.com/watch?v=v-EquowEW8c",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Supply Chain Management",
-            "Name": "Supply Chain Management Course",
-            "Link": "https://www.youtube.com/playlist?list=PLOrSGqbA50lDh1xnrmwE_6DOQKJ4xD6G1",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "Business Intelligence & Analytics",
-            "Name": "Business Analytics Full Course 2025 | Business Analytics Tutorial For Beginners ",
-            "Link": "https://www.youtube.com/watch?v=kMQpXRbtpjU",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Remote Team Management",
-            "Name": "The 21 Rules for Managing Remote Teams",
-            "Link": "https://www.youtube.com/watch?v=KLDSokWCbFY",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Business Storytelling & Pitching",
-            "Name": "How to Tell Your Business Story\u2014Use Storytelling to Pitch Your Business and Build Your Brand",
-            "Link": "https://www.youtube.com/watch?v=b85j6V_3GO8",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Financial Forecasting & Budgeting",
-            "Name": "Financial Forecasting and Modeling 2+ Hour Course!",
-            "Link": "https://www.youtube.com/watch?v=RnRKE-_WHd0",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Product Management for Business Leaders",
-            "Name": "Product Management Full Course 2025 | Product Management Tutorial For Beginners | Simplilearn",
-            "Link": "https://www.youtube.com/watch?v=6zsFZWtG6UQ",
-            "Unnamed: 3": "vid"
-        },
-        {
-            "Course ": "Business Ethics & Corporate Governance",
-            "Name": "Business Ethics & Corporate Governance",
-            "Link": "https://www.youtube.com/playlist?list=PLmFN7_8sAtp8as8heVS8BGUwJcsJvrlpM",
-            "Unnamed: 3": "playlist"
-        },
-        {
-            "Course ": "SaaS Business Models & Metrics",
-            "Name": "SaaS Business Metrics",
-            "Link": "https://www.youtube.com/watch?v=7Fnhv3UrYv8",
-            "Unnamed: 3": "vid"
-        }
-    ],
-    "Marketing": [
-        {
-            "Couses": "Fundamentals of Digital Marketing",
-            "Link": "https://www.youtube.com/playlist?list=PLLSovFY-eK2_1isRMtrNS_me4zDrs2CuS"
-        },
-        {
-            "Couses": "Digital Marketing Full Course (2025) | Digital Marketing Free Course For Beginners ",
-            "Link": "https://www.youtube.com/watch?v=BbJ604IjM5g"
-        },
-        {
-            "Couses": "The Ultimate Social Media Marketing Strategy",
-            "Link": "http://youtube.com/watch?v=lqmA-LrQzcY"
-        },
-        {
-            "Couses": "Content Marketing Full Course | Content Marketing Tutorial For Beginners ",
-            "Link": "https://www.youtube.com/watch?v=osVm6UrwEYc"
-        },
-        {
-            "Couses": "Email Marketing Full Course 2026 | Email Marketing Tutorial for Beginners | Simplilearn",
-            "Link": "https://www.youtube.com/watch?v=DvwUgqX3ZF4"
-        },
-        {
-            "Couses": "Full Influencer Marketing Agency Course [100% FREE]",
-            "Link": "https://www.youtube.com/watch?v=sw32JXFdGV8"
-        },
-        {
-            "Couses": "Facebook Ads Tutorial - 2025 FREE COURSE for Beginners",
-            "Link": "https://www.youtube.com/watch?v=rWhmrxOFtaA"
-        },
-        {
-            "Couses": "Branding for Non Creatives: Crash Course Full Keynote (2024)",
-            "Link": "https://www.youtube.com/watch?v=h-eRwbbpfxo"
-        },
-        {
-            "Couses": "Copywriting Full Course for Beginners in 7 HOURS | Become Copywriter Without Experience",
-            "Link": "https://www.youtube.com/watch?v=vcQxkgHSPTc"
-        },
-        {
-            "Couses": "Growth Hacking In Marketing | Learn Growth Hacking Marketing Strategies | Simplilearn",
-            "Link": "https://www.youtube.com/watch?v=a_PUw6im5KY"
-        },
-        {
-            "Couses": "Video Marketing and Advertising Strategy for beginners (Full Course) | Youtube Marketing",
-            "Link": "https://www.youtube.com/watch?v=B300i9dtHkM"
-        },
-        {
-            "Couses": "CRM Course For Beginners | Customer Relationship Management | Simplilearn",
-            "Link": "https://www.youtube.com/watch?v=Ci_qMjf8JRg"
-        },
-        {
-            "Couses": "marketing psychology",
-            "Link": "https://www.youtube.com/watch?v=p6aF5ma7BiM"
-        },
-        {
-            "Couses": "Social media analytics and reporting ",
-            "Link": "https://www.youtube.com/watch?v=aEsWltLmPfc"
-        },
-        {
-            "Couses": "Email Marketing Full Course 2026 | Email Marketing Tutorial for Beginners | Simplilearn",
-            "Link": "https://www.youtube.com/watch?v=DvwUgqX3ZF4"
-        },
-        {
-            "Couses": "YouTube Marketing Full Course | YouTube Marketing Tutorial | Learn YouTube Marketing | Simplilearn",
-            "Link": "http://youtube.com/watch?v=fiSFoI1oGps"
-        },
-        {
-            "Couses": "How to Build a Personal Brand (Full Course)",
-            "Link": "https://www.youtube.com/watch?v=Ch4Sl0POBhU"
-        },
-        {
-            "Couses": "omplete Digital Marketing Funnel Free Course (Beginner to Pro) 2025",
-            "Link": "https://www.youtube.com/watch?v=uhQdSzNTZZU"
-        },
-        {
-            "Couses": "introduction to building customer loyalty online | Google Digital Marketing & E-commerce Certificate",
-            "Link": "https://www.youtube.com/watch?v=jASPsLUNrgA"
-        },
-        {
-            "Couses": "Mobile Marketing Introduction | Mobile Marketing Tutorial | Simplilearn",
-            "Link": "https://www.youtube.com/watch?v=CE_LOhd0vVc"
-        },
-        {
-            "Couses": "Google Digital Marketing & E-commerce Certificate",
-            "Link": "https://www.youtube.com/playlist?list=PLTZYG7bZ1u6qDuyxKfDrvzJRFnjalX32r"
-        },
-        {
-            "Couses": "The Best Marketing Automation Tools in 2025",
-            "Link": "https://www.youtube.com/watch?v=5d2mSejXIgY"
-        },
-        {
-            "Couses": "Consumer Behavior Courses",
-            "Link": "https://www.youtube.com/playlist?list=PLrNeEWIvE6WsfpbHtyRXkjXG8gvvW8-Pi"
-        },
-        {
-            "Couses": "Give me 46 minutes and I'll 10x Your LinkedIn Reach (Copy this Strategy )",
-            "Link": "https://www.youtube.com/watch?v=3tXVSpImzXk&t=1620s"
-        }
-    ]
+  "Programming": [
+    {
+      "Course": "Java Development Full Stack",
+      "Vid Name": "Full Stack Development with Java Spring Boot, React, and MongoDB – Full Course",
+      "Link": "https://youtu.be/5PdEmeopJVQ?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Python for Beginners",
+      "Vid Name": "Python Full Course for Beginners [2025]",
+      "Link": "https://youtu.be/K5KVEU3aaeQ?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Data Structures & Algorithms in C++",
+      "Vid Name": "Complete C++ DSA Course (full playlist covering DSA with C++).",
+      "Link": "https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Machine Learning with Python",
+      "Vid Name": "Machine Learning",
+      "Link": "https://www.youtube.com/playlist?list=PLWKjhJtqVAblStefaz_YOVpDWqcRScc2s",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Artificial Intelligence Foundations",
+      "Vid Name": "Artificial Intelligence Full Course (2025 / comprehensive intro course video).",
+      "Link": "https://www.youtube.com/live/kzavQrLyKRw?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Deep Learning & Neural Networks",
+      "Vid Name": "TensorFlow 2.0 Complete Course (deep learning tutorial / full course).",
+      "Link": "https://youtu.be/tPYj3fFJGjk?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": " AWS",
+      "Vid Name": "AWS Tutorial For Beginners",
+      "Link": "https://youtu.be/k1RI5locZE4?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Generative AI",
+      "Vid Name": "Generative AI Full Course – Gemini Pro, OpenAI, Llama, Langchain, Pinecone, Vector Databases & More",
+      "Link": "https://youtu.be/mEsleV16qdo?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Ethical Hacking",
+      "Vid Name": "Full Ethical Hacking / Penetration Testing Course (beginner-friendly full tutorial).",
+      "Link": "https://youtu.be/3Kq1MIfTWCE?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Mobile App Development with Flutter",
+      "Vid Name": "Flutter Course for Beginners — (full 37-hour Flutter course / freeCodeCamp)",
+      "Link": "https://youtu.be/VPvVD8t02U8?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Game Development with Unity",
+      "Vid Name": "Learn Unity - Beginner's Game Development Tutorial",
+      "Link": "https://youtu.be/gB1F9G0JXOo?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "DevOps",
+      "Vid Name": "DEVOPS ZERO TO HERO COURSE",
+      "Link": "https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Blockchain Development",
+      "Vid Name": "Learn Blockchain & Solidity Development Full Course 2024",
+      "Link": "https://youtu.be/jcgfQEbptdo?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Database Management with SQL",
+      "Vid Name": "SQL Tutorial - Full Database Course for Beginners",
+      "Link": "https://youtu.be/HXV3zeQKqGY?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Arduino ",
+      "Vid Name": "New Arduino Tutorials",
+      "Link": "https://www.youtube.com/playlist?list=PLGs0VKk2DiYw-L-RibttcvK-WBZm8WLEP",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Full-Stack Web Development",
+      "Vid Name": "Full Stack Web Development Full Course (2025) | COMPLETE Web Development Course | Intellipaat",
+      "Link": "https://www.youtube.com/live/yHWsByTVOXM?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "React.js Essentials",
+      "Vid Name": "React JS v19 Full Course (2025)",
+      "Link": "https://www.youtube.com/playlist?list=PL5dkTTGqCuTM4ZESWF3aTUmG0GUmwSE98",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Node.js Backend Development",
+      "Vid Name": "Node.js Tutorial (2025) - Complete Backend Course",
+      "Link": "https://www.youtube.com/playlist?list=PLt-1cRobtRcaNIWI1VXL2NG2qR4pBH55H",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "TypeScript",
+      "Vid Name": "Learn TypeScript – Full Tutorial",
+      "Link": "https://youtu.be/30LWjhZzg50?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Python for Data Science",
+      "Vid Name": "Python For Data Science Full Course 2025 | Data Science With Python For Beginners",
+      "Link": "https://www.youtube.com/live/eIA28KNWGiI?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Docker & Containerization for Developers",
+      "Vid Name": "Docker Tutorial for Beginners [FULL COURSE in 3 Hours]",
+      "Link": "https://youtu.be/3c-iBn73dDE?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Spring Boot Microservices Architecture",
+      "Vid Name": "Spring Boot Microservices Full Course",
+      "Link": "https://www.youtube.com/playlist?list=PLSVW22jAG8pBnhAdq9S8BpLnZ0_jVBj0c",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "JavaScript for Beginners",
+      "Vid Name": "JavaScript Tutorial Full Course - Beginner to Pro",
+      "Link": "https://youtu.be/EerdGm-ehJQ?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "SQL",
+      "Vid Name": "Learning with Ansh ",
+      "Link": "https://youtu.be/ijGBetfRO1I",
+      "Unnamed: 3": "vid",
+      "Description": "Learnig with me ",
+      "Tags": [
+        "beginner friendly"
+      ]
+    },
+    {
+      "Course": "SQL",
+      "Vid Name": "learnig with Ansh",
+      "Link": "https://youtu.be/ijGBetfRO1I",
+      "Unnamed: 3": "vid",
+      "Description": "Master SQL with comprehensive tutorials and hands-on projects. This course covers fundamental concepts, best practices, and real-world applications to help you become proficient in programming.",
+      "Thumbnail": "",
+      "Tags": [
+        "beginner friendly"
+      ]
+    },
+    {
+      "Course": "SQL",
+      "Vid Name": "learning with Johny",
+      "Link": "https://youtu.be/ijGBetfRO1I",
+      "Unnamed: 3": "vid",
+      "Description": "Master SQL",
+      "Thumbnail": "",
+      "Tags": [
+        "beginner"
+      ]
+    },
+    {
+      "Course": "sql",
+      "Vid Name": "lear",
+      "Link": "https://youtu.be/zJcSod-L-Ps?si=_YqgINAIfG-b94U5",
+      "Unnamed: 3": "vid",
+      "Description": "Master SQL with comprehensive tutorials and hands-on projects. This course covers fundamental concepts, best practices, and real-world applications to help you become proficient in programming.",
+      "Thumbnail": "",
+      "Tags": []
+    }
+  ],
+  "Content Creation": [
+    {
+      "Course": "Introduction to Blogging & Writing",
+      "Vid title": "How to Start a Blog and Make Money With Blogging (2025) | Blogging for Beginners ⚡️",
+      "Link": "https://www.youtube.com/watch?v=uNwI-KAVT0o",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Social Media Content Strategy",
+      "Vid title": "How to Create a Social Media Content Strategy | Lesson 9 (SMM E-Course Challenge)",
+      "Link": "https://youtu.be/CsFIUIeLi5k?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Video Production for Beginners",
+      "Vid title": "Videography for Beginners | Full Course, Start Here!",
+      "Link": "https://youtu.be/PxY9SswA5j8?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Advanced Video Editing with Premiere Pro",
+      "Vid title": "Advanced Premiere Pro for Everyone | FREE COURSE",
+      "Link": "https://youtu.be/FMTlJ4GLvsU?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Podcasting Essentials",
+      "Vid title": "How to Start a Podcast: FULL Free Podcasting Course",
+      "Link": "https://www.youtube.com/playlist?list=PL16yO6yVPZcypQ_DqNHbEcU9v9rWuD3RG",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Photography Basics for Content Creators",
+      "Vid title": "Learn Photography for Beginners | Full photography course",
+      "Link": "https://youtu.be/yhAmMUi2NmM?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Graphic Design with Canva",
+      "Vid title": "CANVA Full Free Course (New Updated)",
+      "Link": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGcvBiUmkBQ5isfnBufjnAu3",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Adobe Photoshop Mastery",
+      "Vid title": "Adobe Photoshop CC Beginner to Advanced Tutorial: 8.5 Hour Training Course",
+      "Link": "https://youtu.be/thy-pH94kO8?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Adobe Illustrator for Beginners",
+      "Vid title": "Adobe Illustrator for Beginners | FREE COURSE",
+      "Link": "https://youtu.be/Ib8UBwu3yGA?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Storytelling for Digital Media",
+      "Vid title": "Storytelling course",
+      "Link": "https://www.youtube.com/playlist?list=PLTDvPohSybx64TpVFD6V4gz16Z36SbEJd",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Branding & Visual Identity",
+      "Vid title": "How To ACTUALLY Design a Brand Identity (Full Guide 2025)",
+      "Link": "https://youtu.be/y_2P5o_msuo?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "SEO for Content Creators",
+      "Vid title": "Complete SEO Course for Beginners: Learn to Rank #1 in Google",
+      "Link": "https://youtu.be/xsVTqzratPs?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "TikTok Content Creation",
+      "Vid title": "Beginners Guide To Making Money on TikTok in 2025 (FREE 4hr Course)",
+      "Link": "https://youtu.be/Wg0sxkrkFTQ?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Instagram Marketing & Growth",
+      "Vid title": "Instagram Growth Course 2025 Full Series in Hindi | Instagram Marketing Full Course #instagramcourse",
+      "Link": "https://www.youtube.com/watch?v=jilPHofu1Q4&list=PLXwTOG3-tRwjsL-3QVGOyALgUZItF-rC8",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "YouTube Channel Management",
+      "Vid title": "How To Start A YouTube Channel In 2025 | FULL COURSE",
+      "Link": "https://www.youtube.com/watch?v=o5Ts_P3MNew",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Adobe After Effects",
+      "Vid title": "Learn Adobe After Effects",
+      "Link": "https://www.youtube.com/playlist?list=PLYfCBK8IplO77FDDLnS06qEMoVLD7Qyib",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course": "Cinematography & Film Production",
+      "Vid title": "How to Master the Art of Filmmaking",
+      "Link": "https://www.youtube.com/watch?v=XlYWZRf_IKM",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Audio Editing with Audacity / Logic Pro",
+      "Vid title": "How to use Audacity to Record & Edit Audio | Beginners Tutorial",
+      "Link": "https://youtu.be/yzJ2VyYkmaA?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "Graphic Design Fundamentals",
+      "Vid title": "Graphic Design Basics | FREE COURSE",
+      "Link": "https://www.youtube.com/watch?v=GQS7wPujL2k",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "sql",
+      "Vid Name": "learning with Johny",
+      "Link": "https://www.youtube.com/watch?v=J_r6hBo9lO4",
+      "Unnamed: 3": "vid",
+      "Description": "Master SQL with comprehensive tutorials and hands-on projects. This course covers fundamental concepts, best practices, and real-world applications to help you become proficient in programming.",
+      "Thumbnail": "",
+      "Tags": []
+    }
+  ],
+  "Business": [
+    {
+      "Course ": "Fundamentals of Entrepreneurship",
+      "Name": "The Foundations of Entrepreneurship - Full Course",
+      "Link": "https://youtu.be/UEngvxZ11sw?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Business planning",
+      "Name": "MIT 15.S21 Nuts and Bolts of Business Plans, IAP 2014",
+      "Link": "https://www.youtube.com/playlist?list=PLUl4u3cNGP61x5b_88idmqeRdPULQjGnv",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Financial Accounting Basics",
+      "Name": "Financial Accounting Course (complete playlist)",
+      "Link": "https://www.youtube.com/playlist?list=PLxP0KZzCGFYMghlw8ObWScuUwepqjXjbB",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Corporate Finance",
+      "Name": "Corporate Finance",
+      "Link": "https://www.youtube.com/playlist?list=PLStJMmIc-aqW1aMIKFmJMaMv3GQKX3P4Y",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Leadership & Management Skills",
+      "Name": "Leadership and management",
+      "Link": "https://www.youtube.com/playlist?list=PLrjP20LtSCNqVK8IwLd0rAiUVs8fwS0YQ",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": " Negotiation",
+      "Name": "Negotiation",
+      "Link": "https://www.youtube.com/playlist?list=PL6vWkk9L7LeHKze5em0hAzvagJ1oIQv_P",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "Business Communication ",
+      "Name": "Think Fast, Talk Smart: Communication Techniques",
+      "Link": "https://youtu.be/HAnw168huqA?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Funding",
+      "Name": "Funding Your Dream Startup in India (Debt, Equity, & Everything In-Between!)",
+      "Link": "https://youtu.be/uqdUFMzCAwU?feature=shared",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Project Management Fundamentals",
+      "Name": "Project Management Fundamentals",
+      "Link": "https://www.youtube.com/playlist?list=PLsz8d8r2a996dLF6xCFwYdLxxlUK4IXPt",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": " Business Analytics with Excel",
+      "Name": "Business Analytics And Excel Full Course 2023 | Data Analytics With Excel | Excel | Simplilearn",
+      "Link": "https://www.youtube.com/watch?v=K1yz9izM4lQ",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Operations Management ",
+      "Name": "Operations Management full course",
+      "Link": "https://www.youtube.com/playlist?list=PL5_qO7P2XjBd86Pw0SQVTaA88nHTj1I3e",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "Human resouce ",
+      "Name": "Human Resources Training Course Lecture | HR Basics, Strategies & Workplace Success",
+      "Link": "https://www.youtube.com/watch?v=__Auz5OOGtU",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Risk Management & Decision Making",
+      "Name": "Risk Based Decision Making Training",
+      "Link": "https://www.youtube.com/watch?v=SG1DG3TC0jI",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "E-Commerce Business Strategies",
+      "Name": "How to Start an Ecommerce Business in 2025 (FREE COURSE)",
+      "Link": "https://www.youtube.com/watch?v=S8p31Sg69RY",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "International Business`",
+      "Name": "Principles of International Business",
+      "Link": "https://www.youtube.com/playlist?list=PLHPrTtF9UV1IxnJZrrDMfIwWRw4BTfVuj",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "Advanced Leadership & People Management",
+      "Name": "Leadership Skills, Development & People Management",
+      "Link": "https://www.youtube.com/playlist?list=PLNMicXF-qb-WOpDdJU2KDYgyjRzsv8nv5",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "Strategic Decision-Making Techniques",
+      "Name": "Before You Decide: 3 Steps To Better Decision Making | Matthew Confer ",
+      "Link": "https://www.youtube.com/watch?v=d7Jnmi2BkS8",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Corporate Strategy & Competitive Analysis",
+      "Name": "Competitive Strategy Overview | Strategy & Technology: A Practical Primer",
+      "Link": "https://www.youtube.com/watch?v=1okDlIbxDgc",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Advanced Financial Modeling",
+      "Name": "Basic to Advanced Financial Modeling and Valuation Analysis Course",
+      "Link": "https://www.youtube.com/playlist?list=PL29wUpOZK1p_TTcTh9Bb8pcmFXYr-PMDT",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "Mergers & Acquisitions Basics",
+      "Name": "Mergers & Acquisitions",
+      "Link": "https://www.youtube.com/playlist?list=PLljNvPOyFqZSnsOvsHRljbRHFV0dLA3Wu",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "Business Law Essentials",
+      "Name": "Business Law",
+      "Link": "https://www.youtube.com/playlist?list=PLoJHkGmgd2_nEfRW1Cm7ojI5abflSzRVE",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "Advanced Project Management",
+      "Name": "Advanced Project Management",
+      "Link": "https://www.youtube.com/watch?v=v-EquowEW8c",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Supply Chain Management",
+      "Name": "Supply Chain Management Course",
+      "Link": "https://www.youtube.com/playlist?list=PLOrSGqbA50lDh1xnrmwE_6DOQKJ4xD6G1",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "Business Intelligence & Analytics",
+      "Name": "Business Analytics Full Course 2025 | Business Analytics Tutorial For Beginners ",
+      "Link": "https://www.youtube.com/watch?v=kMQpXRbtpjU",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Remote Team Management",
+      "Name": "The 21 Rules for Managing Remote Teams",
+      "Link": "https://www.youtube.com/watch?v=KLDSokWCbFY",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Business Storytelling & Pitching",
+      "Name": "How to Tell Your Business Story—Use Storytelling to Pitch Your Business and Build Your Brand",
+      "Link": "https://www.youtube.com/watch?v=b85j6V_3GO8",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Financial Forecasting & Budgeting",
+      "Name": "Financial Forecasting and Modeling 2+ Hour Course!",
+      "Link": "https://www.youtube.com/watch?v=RnRKE-_WHd0",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Product Management for Business Leaders",
+      "Name": "Product Management Full Course 2025 | Product Management Tutorial For Beginners | Simplilearn",
+      "Link": "https://www.youtube.com/watch?v=6zsFZWtG6UQ",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course ": "Business Ethics & Corporate Governance",
+      "Name": "Business Ethics & Corporate Governance",
+      "Link": "https://www.youtube.com/playlist?list=PLmFN7_8sAtp8as8heVS8BGUwJcsJvrlpM",
+      "Unnamed: 3": "playlist"
+    },
+    {
+      "Course ": "SaaS Business Models & Metrics",
+      "Name": "SaaS Business Metrics",
+      "Link": "https://www.youtube.com/watch?v=7Fnhv3UrYv8",
+      "Unnamed: 3": "vid"
+    },
+    {
+      "Course": "sql",
+      "Vid Name": "learning",
+      "Link": "https://youtu.be/zJcSod-L-Ps?si=_YqgINAIfG-b94U5",
+      "Unnamed: 3": "vid",
+      "Description": "Master SQL with comprehensive tutorials and hands-on projects. This course covers fundamental concepts, best practices, and real-world applications to help you become proficient in programming.",
+      "Thumbnail": "",
+      "Tags": []
+    }
+  ],
+  "Marketing": [
+    {
+      "Couses": "Fundamentals of Digital Marketing",
+      "Link": "https://www.youtube.com/playlist?list=PLLSovFY-eK2_1isRMtrNS_me4zDrs2CuS"
+    },
+    {
+      "Couses": "Digital Marketing Full Course (2025) | Digital Marketing Free Course For Beginners ",
+      "Link": "https://www.youtube.com/watch?v=BbJ604IjM5g"
+    },
+    {
+      "Couses": "The Ultimate Social Media Marketing Strategy",
+      "Link": "http://youtube.com/watch?v=lqmA-LrQzcY"
+    },
+    {
+      "Couses": "Content Marketing Full Course | Content Marketing Tutorial For Beginners ",
+      "Link": "https://www.youtube.com/watch?v=osVm6UrwEYc"
+    },
+    {
+      "Couses": "Email Marketing Full Course 2026 | Email Marketing Tutorial for Beginners | Simplilearn",
+      "Link": "https://www.youtube.com/watch?v=DvwUgqX3ZF4"
+    },
+    {
+      "Couses": "Full Influencer Marketing Agency Course [100% FREE]",
+      "Link": "https://www.youtube.com/watch?v=sw32JXFdGV8"
+    },
+    {
+      "Couses": "Facebook Ads Tutorial - 2025 FREE COURSE for Beginners",
+      "Link": "https://www.youtube.com/watch?v=rWhmrxOFtaA"
+    },
+    {
+      "Couses": "Branding for Non Creatives: Crash Course Full Keynote (2024)",
+      "Link": "https://www.youtube.com/watch?v=h-eRwbbpfxo"
+    },
+    {
+      "Couses": "Copywriting Full Course for Beginners in 7 HOURS | Become Copywriter Without Experience",
+      "Link": "https://www.youtube.com/watch?v=vcQxkgHSPTc"
+    },
+    {
+      "Couses": "Growth Hacking In Marketing | Learn Growth Hacking Marketing Strategies | Simplilearn",
+      "Link": "https://www.youtube.com/watch?v=a_PUw6im5KY"
+    },
+    {
+      "Couses": "Video Marketing and Advertising Strategy for beginners (Full Course) | Youtube Marketing",
+      "Link": "https://www.youtube.com/watch?v=B300i9dtHkM"
+    },
+    {
+      "Couses": "CRM Course For Beginners | Customer Relationship Management | Simplilearn",
+      "Link": "https://www.youtube.com/watch?v=Ci_qMjf8JRg"
+    },
+    {
+      "Couses": "marketing psychology",
+      "Link": "https://www.youtube.com/watch?v=p6aF5ma7BiM"
+    },
+    {
+      "Couses": "Social media analytics and reporting ",
+      "Link": "https://www.youtube.com/watch?v=aEsWltLmPfc"
+    },
+    {
+      "Couses": "Email Marketing Full Course 2026 | Email Marketing Tutorial for Beginners | Simplilearn",
+      "Link": "https://www.youtube.com/watch?v=DvwUgqX3ZF4"
+    },
+    {
+      "Couses": "YouTube Marketing Full Course | YouTube Marketing Tutorial | Learn YouTube Marketing | Simplilearn",
+      "Link": "http://youtube.com/watch?v=fiSFoI1oGps"
+    },
+    {
+      "Couses": "How to Build a Personal Brand (Full Course)",
+      "Link": "https://www.youtube.com/watch?v=Ch4Sl0POBhU"
+    },
+    {
+      "Couses": "omplete Digital Marketing Funnel Free Course (Beginner to Pro) 2025",
+      "Link": "https://www.youtube.com/watch?v=uhQdSzNTZZU"
+    },
+    {
+      "Couses": "introduction to building customer loyalty online | Google Digital Marketing & E-commerce Certificate",
+      "Link": "https://www.youtube.com/watch?v=jASPsLUNrgA"
+    },
+    {
+      "Couses": "Mobile Marketing Introduction | Mobile Marketing Tutorial | Simplilearn",
+      "Link": "https://www.youtube.com/watch?v=CE_LOhd0vVc"
+    },
+    {
+      "Couses": "Google Digital Marketing & E-commerce Certificate",
+      "Link": "https://www.youtube.com/playlist?list=PLTZYG7bZ1u6qDuyxKfDrvzJRFnjalX32r"
+    },
+    {
+      "Couses": "The Best Marketing Automation Tools in 2025",
+      "Link": "https://www.youtube.com/watch?v=5d2mSejXIgY"
+    },
+    {
+      "Couses": "Consumer Behavior Courses",
+      "Link": "https://www.youtube.com/playlist?list=PLrNeEWIvE6WsfpbHtyRXkjXG8gvvW8-Pi"
+    },
+    {
+      "Couses": "Give me 46 minutes and I'll 10x Your LinkedIn Reach (Copy this Strategy )",
+      "Link": "https://www.youtube.com/watch?v=3tXVSpImzXk&t=1620s"
+    }
+  ]
 }

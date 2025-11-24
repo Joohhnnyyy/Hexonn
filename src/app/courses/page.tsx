@@ -67,7 +67,6 @@ export default function Page() {
 
     tl.from(element.querySelector('[data-animate="feature-cards"]'), {
       x: -50,
-      opacity: 0,
       duration: 0.8,
       ease: "power2.out"
     })
@@ -108,29 +107,29 @@ export default function Page() {
       description:
         "HEXON is designed for students, professionals, and lifelong learners who want to master new skills through personalized, adaptive learning experiences.",
       icon: <IconTerminal2 />,
-      bgColor: "bg-gray-900",
-      borderColor: "border-gray-700",
-      textColor: "text-gray-300",
-      hoverBg: "hover:bg-gray-800",
+      bgColor: "bg-white/20 sm:bg-white/10 backdrop-blur-xl",
+      borderColor: "border-white/30 sm:border-white/20",
+      textColor: "text-white",
+      hoverBg: "hover:bg-white/20",
     },
     {
       title: "Next-gen learning",
       description:
         "Experience the future of education with AI-powered course recommendations, interactive content, and real-time progress tracking that adapts to your learning style.",
       icon: <IconEaseInOut />,
-      bgColor: "bg-gray-900",
-      borderColor: "border-gray-700",
-      textColor: "text-gray-300",
-      hoverBg: "hover:bg-gray-800",
+      bgColor: "bg-white/20 sm:bg-white/10 backdrop-blur-xl",
+      borderColor: "border-white/30 sm:border-white/20",
+      textColor: "text-white",
+      hoverBg: "hover:bg-white/20",
     },
     {
       title: "Learn anywhere, anytime",
       description: "Access thousands of courses from industry experts, available 24/7 on any device. Your learning journey never stops with HEXON's cloud-based platform.",
       icon: <IconCloud />,
-      bgColor: "bg-gray-900",
-      borderColor: "border-gray-700",
-      textColor: "text-gray-300",
-      hoverBg: "hover:bg-gray-800",
+      bgColor: "bg-white/20 sm:bg-white/10 backdrop-blur-xl",
+      borderColor: "border-white/30 sm:border-white/20",
+      textColor: "text-white",
+      hoverBg: "hover:bg-white/20",
     },
   ];
 
@@ -139,9 +138,9 @@ export default function Page() {
       <Header />
       <PageTransitionWrapper>
         {/* Hero Section */}
-        <section ref={heroRef} className="bg-black pt-[270px]">
+        <section ref={heroRef} className="bg-black pt-24 md:pt-40 lg:pt-[270px]">
           <div className="w-full px-0 py-8">
-            <h1 className="text-[5rem] md:text-[10rem] font-thin text-white leading-none mb-0 pl-4">
+            <h1 className="text-5xl sm:text-6xl md:text-[8rem] lg:text-[10rem] font-thin text-white leading-tight md:leading-none mb-0 pl-4">
               Courses
             </h1>
           </div>
@@ -151,11 +150,11 @@ export default function Page() {
         <section ref={searchRef} className="bg-black border-t border-gray-800">
           <div className="w-full px-2 py-4">
             <div className="relative max-w-full">
-              <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 w-6 h-6" />
+              <Search className="absolute left-4 sm:left-6 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5 sm:w-6 sm:h-6" />
               <input
                 type="text"
                 placeholder="Search"
-                className="w-full bg-black border border-gray-700 px-16 py-5 text-lg text-white placeholder-gray-400 focus:outline-none focus:border-gray-500 rounded-lg"
+                className="w-full bg-black border border-gray-700 pl-12 sm:pl-16 py-4 sm:py-5 text-base sm:text-lg text-white placeholder-gray-400 focus:outline-none focus:border-gray-500 rounded-lg"
               />
             </div>
           </div>
@@ -163,16 +162,16 @@ export default function Page() {
 
         {/* Main Content */}
         <section ref={contentRef} className="bg-black">
-          <div className="w-full px-2 pt-10 pb-24">
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div className="w-full px-2 pt-6 md:pt-10 pb-16 md:pb-24">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
               {/* Left Section: Feature Cards */}
-              <div data-animate="feature-cards" className="lg:col-span-1 space-y-6">
+              <div data-animate="feature-cards" className="lg:col-span-1 space-y-4 md:space-y-6">
                 <FeatureCards features={features} />
               </div>
 
               {/* Right Section: Flowing Menu for Courses */}
-              <div data-animate="flowing-menu" className="lg:col-span-3">
-                <div className="mb-12" style={{ height: '600px', position: 'relative' }}>
+              <div data-animate="flowing-menu" className="lg:col-span-3 relative z-[0]">
+                <div className="mb-8 md:mb-12" style={{ height: '420px', position: 'relative', zIndex: 0 }}>
                   <FlowingMenu items={menuItems} />
                 </div>
               </div>
@@ -189,7 +188,6 @@ function FeatureCards({ features }: FeatureCardsProps) {
   const featureCardsRef = useGSAPElement<HTMLDivElement>((element, gsap) => {
     gsap.from(element.querySelectorAll('[data-animate="feature-card"]'), {
       y: 30,
-      opacity: 0,
       duration: 0.6,
       stagger: 0.2,
       ease: "power2.out",
@@ -202,7 +200,7 @@ function FeatureCards({ features }: FeatureCardsProps) {
   }, []);
 
   return (
-    <div ref={featureCardsRef} className="grid grid-cols-1 gap-6 relative z-10 py-10 max-w-full mx-auto">
+    <div ref={featureCardsRef} className="grid grid-cols-1 gap-6 relative z-[300] isolate py-10 max-w-full mx-auto">
       {features.map((feature, index) => (
         <Feature key={index} {...feature} />
       ))}
@@ -258,16 +256,20 @@ const Feature = ({ title, description, icon, bgColor, borderColor, textColor, ho
       ref={featureRef}
       data-animate="feature-card" 
       className={cn(
-        "flex flex-col py-8 relative rounded-lg border cursor-pointer transition-all duration-300",
+        "flex flex-col py-8 relative z-[200] opacity-100 rounded-xl border ring-1 ring-white/30 sm:ring-white/20 shadow-md shadow-black/40 cursor-pointer transition-all duration-300",
         bgColor,
         borderColor,
         textColor,
         hoverBg
       )}
     >
-      <div className="mb-4 px-10 feature-icon">{icon}</div>
-      <h3 className="text-lg font-bold mb-2 px-10">{title}</h3>
-      <p className="text-sm px-10">{description}</p>
+      <div className="absolute inset-0 rounded-xl pointer-events-none opacity-30">
+        <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/30 sm:from-white/20 via-white/10 to-transparent" />
+        <div className="absolute -top-1 -left-1 w-1/3 h-1/3 rounded-full bg-white/20 sm:bg-white/10 blur-xl" />
+      </div>
+      <div className="mb-4 px-10 feature-icon text-white">{icon}</div>
+      <h3 className="text-lg font-bold mb-2 px-10 text-white">{title}</h3>
+      <p className="text-sm px-10 text-white/80">{description}</p>
     </div>
   );
 };
